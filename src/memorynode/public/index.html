@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Memory - Online</title>
+      <meta charset="UTF-8" name="description" content="Play Memory online with your friends! Create a game room and invite your friends by a link.">
+      <link rel="icon" href="./img/cards/back.png">
+      <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+      <script src="jquery.js" type="text/javascript"></script>
+      <script src="flip.js" type="text/javascript"></script>
+      <link rel="stylesheet" type="text/css" href="animate.css">
+      <link rel="stylesheet" type="text/css" href="layout.css">
+      <script src = "socket.io/socket.io.js"></script>
+      <script src="main.js" type="text/javascript"></script>
+   </head>
+   <body>
+     <div id="wrapper_center">
+       <div id="main_header">
+         <img src="./img/logo_memory_cropped.png" alt="Memory! Play with your friends.">
+       </div>
+       <p id="room_id" style="display:none;">Before you join the room! Choose a username.</p>
+       <input id="username" type="text" maxlength="20" placeholder="username" autocomplete="off">
+       <div></div>
+       <div id="create_room" class="button">Create Room</div>
+       <div id="queue" class="button">Queue</div>
+       <div id="play" class="button" style="display: none;">Play</div>
+       <footer>Contact | Privacy</footer>
+     </div>
+     <div id="wrapper_game">
+       <div id="main_header">
+         <img src="./img/logo_memory_cropped.png" alt="Memory! Play with your friends.">
+       </div>
+       <div id="users_panel">
+       </div>
+       <div id="gameboard">
+       </div>
+     </div>
+   <div id="popup">
+     <p>Share this link to invite friends!</p>
+     <input type="text" id="popup_i" readonly="readonly">
+     <div id="game_options">
+       <p>Amount of cards</p>
+       <div id="boardsize">
+         <div b_size="4">4x4</div>
+         <div b_size="5">5x5</div>
+         <div b_size="6">6x6</div>
+       </div>
+       <div></div>
+     </div>
+     <div></div>
+     <div class="popup_button" id="clipboard">Copy to Clipboard</div>
+     <div class="popup_button" id="done">Start Game</div>
+   </div>
+   </body>
+</html>

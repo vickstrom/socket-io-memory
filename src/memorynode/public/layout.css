@@ -1,0 +1,207 @@
+
+* {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.button, .popup_button, .user_bar {
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+
+  -webkit-transition: border-color 0.4s ease;
+  -moz-transition: border-color 0.4s ease;
+  -o-transition: border-color 0.4s ease;
+  transition: border-color 0.4s ease;
+}
+
+body {
+  background: white;
+}
+
+#main_header {
+  text-align: center;
+  font-size: 80px;
+  color: #e5e5e5;
+}
+
+#main_header img {
+  width: 25%;
+  height: 10%;
+}
+
+#wrapper_center, #wrapper_game {
+  text-align: center;
+  display: none;
+  margin-top: 3%;
+}
+
+#username {
+  color: #878787;
+  border: 2px solid #e5e5e5;
+  font-size: 20px;
+  padding: 10px;
+  background: white;
+}
+
+#room_id {
+  color: #878787;
+  font-size: 20px;
+}
+
+.button {
+  display: inline-block;
+  width: 10%;
+  background: #afdce7;
+  color: white;
+  padding: 15px;
+  margin-top: 1%;
+  font-size: 20px;
+}
+
+#create_room, #clipboard {
+  background: #bed29f;
+}
+
+#create_room:hover, #clipboard:hover{
+  cursor: pointer;
+  background: #98B270;
+}
+
+.button:hover, .popup_button:hover {
+  cursor: pointer;
+  background: #7FBDCC;
+}
+
+#username:focus {
+    outline: none;
+}
+
+footer {
+  color: #878787;
+}
+
+#gameboard, #users_panel {
+  text-align: center;
+}
+
+.user_bar {
+  border: 2px solid #e5e5e5;
+  display: inline-block;
+  padding: 0.5%;
+/*  border-radius: 15px;*/
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  display: inline-block;
+  -webkit-transition: transform 1.05s ease-in-out;
+  -moz-transition:transform 1.05s ease-in-out;
+  -ms-transition:transform 1.05s ease-in-out;
+}
+
+.card:hover , .card_hovered {
+  cursor: pointer;
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: transform 1.05s ease-in-out;
+  -moz-transition:transform 1.05s ease-in-out;
+  -ms-transition:transform 1.05s ease-in-out;
+}
+
+.card .front {
+  background-size:cover;
+  background-image: url("./img/cards/back.png");
+}
+
+.card .back {
+  background-size:cover;
+  background-image: url("./img/cards/front.png");
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+    text-align: center;
+}
+
+.overlay_box {
+  display: block;
+  width: 20%;
+  height: 20%;
+  background: white;
+  margin: auto;
+}
+
+#popup {
+  position: fixed;
+  bottom: 4%;
+  right: 4%;
+  width: 20%;
+  border: 2px solid #e5e5e5;
+  text-align: center;
+  padding: 1%;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.1);
+  display: none;
+  background: white;
+}
+
+#popup input {
+  color: #878787;
+  border: 2px solid #e5e5e5;
+  padding: 5px;
+  margin: 2%;
+  width: 80%;
+
+}
+
+.popup_button {
+    display: inline-block;
+    background: #afdce7;
+    color: white;
+    padding: 15px;
+    margin-top: 1%;
+    font-size: 15px;
+}
+
+#popup p {
+  font-size: 20px;
+  color: #878787;
+}
+
+#boardsize {
+  text-align: center;
+}
+
+#boardsize div {
+  display:inline-block;
+  width: 20%;
+  text-align: center;
+  border: 2px solid #e5e5e5;
+  margin: 2% 0 2% 0;
+}
+
+#boardsize div:hover {
+  cursor:pointer;
+  background: #afdce7;
+  border: 2px solid #afdce7;
+  color:white;
+
+}
